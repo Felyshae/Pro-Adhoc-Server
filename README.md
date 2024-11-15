@@ -9,7 +9,7 @@ Version obtained from: http://forums.ppsspp.org/showthread.php?tid=3595&pid=5924
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/Felyshae/AdhocServer.git
+   git clone https://github.com/Felyshae/ProAdhocServer.git
 
 2. Navigate to the directory:
 
