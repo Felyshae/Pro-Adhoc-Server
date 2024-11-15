@@ -116,9 +116,14 @@ void update_status(void)
 					
 					// Iterate Users
 					SceNetAdhocctlUserNode * user = group->player; for(; user != NULL; user = user->group_next)
-					{
-						// Output User Tag + Username
-						fprintf(log, "\t\t\t<user>%s</user>\n", strcpyxml(displayname, (const char *)user->resolver.name.data, sizeof(displayname)));
+					{	
+						// Retrieve the IP address
+						uint8_t * ip = (uint8_t *)&user->resolver.ip;
+
+						// Print the <user> tag with IP as attribute and username as content
+						fprintf(log, "\t\t\t<user ip=\"%u.%u.%u.%u\">%s</user>\n",
+								ip[0], ip[1], ip[2], ip[3],
+								strcpyxml(displayname, (const char *)user->resolver.name.data, sizeof(displayname)));
 					}
 					
 					// Output Closing Group Tag
