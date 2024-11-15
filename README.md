@@ -1,6 +1,7 @@
 # AdhocServer
 
 An Adhoc server for PPSSPP , designed to facilitate multiplayer functionality by connecting players across different devices. This server emulates the PSP's local wireless functionality (Adhoc) over the internet.
+
 Version obtained from: http://forums.ppsspp.org/showthread.php?tid=3595&pid=59241#pid59241
 
 ## Installation
