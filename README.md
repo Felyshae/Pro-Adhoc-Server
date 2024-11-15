@@ -1,4 +1,4 @@
-# AdhocServer
+# ProAdhocServer
 
 An Adhoc server for PPSSPP , designed to facilitate multiplayer functionality by connecting players across different devices. This server emulates the PSP's local wireless functionality (Adhoc) over the internet.
 
